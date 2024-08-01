@@ -58,7 +58,7 @@
   .\python-3.11.9-embed-amd64\python.exe -m pip install scikit_build_core
   ```
 
-- Make sure Visual Studio C++ compiler is installed before installing `llama-cpp-python`.
+- Make sure Visual Studio C++ compiler and CMake are installed before installing `llama-cpp-python`.
 
 - Install `llama-cpp-python`. It will take some time to compile:
 
