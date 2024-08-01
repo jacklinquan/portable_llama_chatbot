@@ -4,7 +4,7 @@
 
 (It is only done for 64-bit Windows.)
 
-- Very simple technique stack:
+- Very simple tech stack:
   - Embedded Python
   - [llama-cpp-python](https://github.com/abetlen/llama-cpp-python)
 - No web server needed.
