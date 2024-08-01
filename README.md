@@ -8,7 +8,7 @@
   - Embedded Python
   - [llama-cpp-python](https://github.com/abetlen/llama-cpp-python)
 - No web server needed.
-- It can run in USB drive. Plug and play.
+- It can run from USB drive. Plug and play.
 
 ## Quick start
 
