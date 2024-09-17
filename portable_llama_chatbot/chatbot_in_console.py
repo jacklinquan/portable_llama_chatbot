@@ -16,7 +16,7 @@ def main():
 
     # https://huggingface.co/Qwen/Qwen2-1.5B-Instruct-GGUF/resolve/main/qwen2-1_5b-instruct-q4_k_m.gguf
     model_name = "qwen2-1_5b-instruct-q4_k_m.gguf"
-    chat_format = "qwen"
+    chat_format = "chatml"
 
     # https://huggingface.co/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF/resolve/main/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf
     # model_name = "Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf"
