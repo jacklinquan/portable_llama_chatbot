@@ -14,13 +14,8 @@ from llama_chatbot import (
 def main():
     os.system("cls")
 
-    # https://huggingface.co/Qwen/Qwen2-1.5B-Instruct-GGUF/resolve/main/qwen2-1_5b-instruct-q4_k_m.gguf
-    model_name = "qwen2-1_5b-instruct-q4_k_m.gguf"
-    chat_format = "chatml"
-
-    # https://huggingface.co/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF/resolve/main/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf
-    # model_name = "Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf"
-    # chat_format = "llama-3"
+    # https://huggingface.co/Qwen/Qwen2.5-3B-Instruct-GGUF/resolve/main/qwen2.5-3b-instruct-q4_k_m.gguf
+    model_name = "qwen2.5-3b-instruct-q4_k_m.gguf"
 
     model_folder_name = "models"
     model_path = Path(__file__).parent / model_folder_name / model_name
@@ -28,7 +23,6 @@ def main():
     model = Llama(
         model_path=str(model_path),
         n_ctx=8192,
-        chat_format=chat_format,
         verbose=False,
     )
 
