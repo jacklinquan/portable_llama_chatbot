@@ -14,15 +14,15 @@ from llama_chatbot import (
 def main():
     os.system("cls")
 
-    # https://huggingface.co/Qwen/Qwen2.5-3B-Instruct-GGUF/resolve/main/qwen2.5-3b-instruct-q4_k_m.gguf
-    model_name = "qwen2.5-3b-instruct-q4_k_m.gguf"
+    # https://huggingface.co/Qwen/Qwen3-4B-GGUF/resolve/main/Qwen3-4B-Q4_K_M.gguf
+    model_name = "Qwen3-4B-Q4_K_M.gguf"
 
     model_folder_name = "models"
     model_path = Path(__file__).parent / model_folder_name / model_name
 
     model = Llama(
         model_path=str(model_path),
-        n_ctx=8192,
+        n_ctx=40960,
         verbose=False,
     )
 

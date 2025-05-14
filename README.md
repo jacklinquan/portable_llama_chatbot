@@ -13,7 +13,7 @@
 ## Quick start
 
 - Git clone or download this repository.
-- Download [qwen2.5-3b-instruct-q4_k_m.gguf](https://huggingface.co/Qwen/Qwen2.5-3B-Instruct-GGUF/resolve/main/qwen2.5-3b-instruct-q4_k_m.gguf) and save it in `portable_llama_chatbot\models` folder.
+- Download [Qwen3-4B-Q4_K_M.gguf](https://huggingface.co/Qwen/Qwen3-4B-GGUF/resolve/main/Qwen3-4B-Q4_K_M.gguf) and save it in `portable_llama_chatbot\models` folder.
 - Run `chatbot_in_console.bat`.
 
 ## Build from scratch
@@ -58,39 +58,25 @@
   import site
   ```
 
-- Install `llama-cpp-python`. There are several ways to do it:
+- Install `llama-cpp-python`.
 
-  - Install from the pre-built wheel in this repository:
+  - Install `scikit_build_core` which is required to build `llama-cpp-python`:
 
-    Download and save `llama_cpp_python-0.3.1-cp311-cp311-win_amd64.whl` in `install`, and run:
     ```shell
-    .\python-3.11.9-embed-amd64\python.exe -m pip install install\llama_cpp_python-0.3.1-cp311-cp311-win_amd64.whl
+    .\python-3.11.9-embed-amd64\python.exe -m pip install scikit_build_core
     ```
 
-  - Install from the official pre-built wheel:
-    ```shell
-    .\python-3.11.9-embed-amd64\python.exe -m pip install https://github.com/abetlen/llama-cpp-python/releases/download/v0.3.1/llama_cpp_python-0.3.1-cp311-cp311-win_amd64.whl
-    ```
+  - Make sure Visual Studio C++ compiler and CMake are installed before building `llama-cpp-python`.
 
-  - Install from PyPI:
+  - Install `llama-cpp-python`. It will take some time to build:
 
-    - Install `scikit_build_core` which is required to build `llama-cpp-python`:
-
-      ```shell
-      .\python-3.11.9-embed-amd64\python.exe -m pip install scikit_build_core
-      ```
-
-    - Make sure Visual Studio C++ compiler and CMake are installed before building `llama-cpp-python`.
-
-    - Install `llama-cpp-python`. It will take some time to build:
-
-      ```shell
-      .\python-3.11.9-embed-amd64\python.exe -m pip install llama-cpp-python==0.3.1
-      ```
+	```shell
+	.\python-3.11.9-embed-amd64\python.exe -m pip install llama-cpp-python==0.3.9
+	```
 
 - Copy `llama_chatbot.py`, `chatbot_in_console.py` and `chatbot_in_console.bat` into `portable_llama_chatbot` folder.
 
-- Download [qwen2.5-3b-instruct-q4_k_m.gguf](https://huggingface.co/Qwen/Qwen2.5-3B-Instruct-GGUF/resolve/main/qwen2.5-3b-instruct-q4_k_m.gguf) and save it in `portable_llama_chatbot\models` folder.
+- Download [Qwen3-4B-Q4_K_M.gguf](https://huggingface.co/Qwen/Qwen3-4B-GGUF/resolve/main/Qwen3-4B-Q4_K_M.gguf) and save it in `portable_llama_chatbot\models` folder.
   Any model that is supported by `llama-cpp-python` should work. Just need to modify `model_name` in `chatbot_in_console.py` script.
 
 - Run `chatbot_in_console.bat` to use it.

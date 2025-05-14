@@ -5,5 +5,5 @@ Download the models and save them in `models` folder.
 
 ## Default model
 
-Download `Qwen2.5-3B-Instruct` from https://huggingface.co/Qwen/Qwen2.5-3B-Instruct-GGUF/resolve/main/qwen2.5-3b-instruct-q4_k_m.gguf
+Download `Qwen3-4B-Q4_K_M.gguf` from https://huggingface.co/Qwen/Qwen3-4B-GGUF/resolve/main/Qwen3-4B-Q4_K_M.gguf
 and save it in `models` folder.
